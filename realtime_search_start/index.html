@@ -6,6 +6,18 @@
   </head>
   <body>
     <div id="app">
+      <p>
+        <input type="text" v-model="keyword">
+      </p>
+      <p>
+        {{ message }}
+      </p>
+      <ul>
+        <li v-for="item in items">
+          <!-- {{ item.title }} -->
+          <a v-bind:href="item.url">{{ item.title }}</a>
+        </li>
+      </ul>
       
     </div>
 
