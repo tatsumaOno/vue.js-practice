@@ -8,16 +8,13 @@
     <body>
         <div id="app">
             <p>
-                {{ message }}
+                <input type="text" v-model:value="km">km
             </p>
             <p>
-                {{ number + 1 }}
+                <input type="text" v-model:value="m">m
             </p>
             <p>
-                {{ message.split('').reverse().join('') }}
-            </p>
-            <p>
-                {{ ok ? 'YES' : 'NO'}}
+                <input type="text" v-model:value="mm">mm
             </p>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
