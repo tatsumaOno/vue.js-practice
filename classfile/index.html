@@ -2,12 +2,14 @@
     <head>
         <meta charset="utf-8">
         <title>classFile</title>
-        <link rel="stylesheet" href="css/binding.css">
+        <link rel="stylesheet" href="css/class.css">
         
     </head>
     <body>
         <div id="app">
-           
+           <p>
+               Hello <span v-bind:class="{large:isLarge,'text-danger': hasError}">Vue.js</span>
+           </p>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
         <script src="js/class.js"></script>
