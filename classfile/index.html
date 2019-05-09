@@ -8,7 +8,7 @@
     <body>
         <div id="app">
            <p>
-               Hello <span v-bind:class="{large:isLarge,'text-danger': hasError}">Vue.js</span>
+               Hello <span v-bind:class="isLarge ? largeClass : ''">Vue.js</span>
            </p>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
