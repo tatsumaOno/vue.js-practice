@@ -1,0 +1,24 @@
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>Hello vue.js</title>
+        <link rel="stylesheet" href="css/ivent.css">
+        
+    </head>
+    <body>
+        <div id="app">
+            <p>
+                {{ message }}
+            </p>
+            <!-- <button v-on:click.once="clickHandler">
+                Click!
+            </button> -->
+            <input type="text" v-on:keyup.ctrl.67="clear" v-model="message">
+            <div v-on:click.shift="clickHandler">
+                Click!
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+        <script src="js/ivent.js"></script>
+    </body>
+</html>
